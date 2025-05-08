@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #f59e0b;
+  --color-dark: #1e293b;
+  --color-light: #f8fafc;
+  --color-gray: #64748b;
+  --color-light-gray: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.dark .bg-gray-100 {
+  background-color: #1f2937;
+}
+
+.bg-gray-800 {
+  background-color: #1f2937;
+}
+
+.dark .bg-gray-800 {
+  background-color: #111827;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.dark .bg-white {
+  background-color: #1f2937;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.dark .text-gray-600 {
+  color: #9ca3af;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.dark .border-gray-300 {
+  border-color: #374151;
+}
+
+.border-gray-600 {
+  border-color: #4b5563;
+}
+
+/* Add more utility classes as needed */
+
+/* Animation classes */
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
